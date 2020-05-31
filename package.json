@@ -3,11 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "serve:main1": "vue-cli-service serve src/main1.js",
+    "serve:main2": "vue-cli-service serve src/main2.js",
+    "serve:main3": "vue-cli-service serve src/main3.js",
+    "lint": "vue-cli-service lint",
+    "build:main1": "vue-cli-service build --dest dist1 src/main1.js",
+    "build:main2": "vue-cli-service build --dest dist2 src/main2.js",
+    "build:main3": "vue-cli-service build --dest dist3 src/main3.js"
   },
   "dependencies": {
+    "buefy": "^0.8.20",
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
   },
